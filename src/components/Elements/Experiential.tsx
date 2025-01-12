@@ -12,20 +12,40 @@ const Experiential = () => {
         <Title.main text="Minhas" />
         <Title.span text="Experiências" />
       </Title.context>
-      <Card.content id="experiential-group">
-        {list.map(({ title, slug, description, type, duration, image }) => (
-          <Card.content>
-            <Card.content id="experiential-content">
-              <Card.header>
-                <h1 id="experiental-title">{title}</h1>
-                <span id="experiential-slug">{slug}</span>
-              </Card.header>
-              <Card.text text={type + duration} />
-              <Card.text text={description} />
-            </Card.content>
-            <Card.cover urlImage={image} />
-          </Card.content>
-        ))}
+
+      <Card.content>
+        {list.map(
+          ({
+            description,
+            duration,
+            slug,
+            title,
+            type,
+            image,
+            icon,
+            link,
+            tags,
+          }) => (
+            <Card.base>
+              <Card.content>
+                <Card.header>
+                  <Card.title text={title} />
+                  <Card.text text={slug} />
+                </Card.header>
+                <Card.text text={type + duration} />
+                <Card.text text={description} />
+
+                <div id="baseTags">
+                  {tags.map((item) => (
+                    <Card.text id="tagsExperiential" text={item} />
+                  ))}
+                </div>
+              </Card.content>
+              {image && <Card.cover urlImage={image} />}
+              {icon && <Card.icon element={icon} />}
+            </Card.base>
+          )
+        )}
       </Card.content>
     </Section>
   );

@@ -8,7 +8,6 @@ const Initial = () => {
             Olá, me chamo <strong>Gabriel Hipólito, desenvolvedor frontend e designer
               </strong>, meu objetivo é levar sua empresa para o mundo web com performace e otmização.
             </span>
-            <img src={Arrow} alt="" />
         </div>
     </section>
   )

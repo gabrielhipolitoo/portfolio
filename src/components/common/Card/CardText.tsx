@@ -1,10 +1,11 @@
 import React, { FC, HtmlHTMLAttributes } from "react";
 
 interface Props extends HtmlHTMLAttributes<HTMLElement> {
-  text: string;
+  text: string ;
+  id?: string;
 }
-const CardText: FC<Props> = ({ text }) => {
-  return <p>{text}</p>;
+const CardText: FC<Props> = ({ text, id = "cardText" }) => {
+  return <p id={id}>{text}</p>;
 };
 
 export default CardText;

@@ -1,7 +1,7 @@
 import { FC, HtmlHTMLAttributes, ReactNode } from "react";
 
 interface Props extends HtmlHTMLAttributes<HTMLElement> {
-  urlImage: HTMLElement;
+  urlImage: string | undefined;
   id?: string;
 }
 

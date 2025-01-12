@@ -1,0 +1,89 @@
+@use "functions";
+
+#cardContent {
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  margin-bottom: auto;
+
+  #cardBase {
+    display: flex;
+    max-width: 95%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 2%;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    #cardHeader {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      color: #8d8d8d;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+
+    #cardText {
+      margin-right: auto;
+      margin: 2px;
+    }
+
+    #cardCover {
+      max-width: 30%;
+      margin-bottom: auto;
+      width: functions.PxToRem(360);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #cardBase {
+      flex-direction: column-reverse;
+      align-items: normal;
+    }
+  }
+
+  @media (max-width: 680px) {
+    #cardText {
+      font-size: functions.PxToRem(15);
+    }
+  }
+}
+
+#sectionItem {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+
+  #content_title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    #main_title {
+      font-weight: 500;
+      text-align: center;
+      font-size: functions.PxToRem(45);
+    }
+
+    #main_span {
+      font-size: functions.PxToRem(45);
+      margin-right: auto;
+      color: #4084ea;
+    }
+  }
+
+  @media (max-width: 680px) {
+    #content_title {
+      flex-direction: column;
+
+      #main_span {
+        margin-right: initial;
+      }
+    }
+  }
+}
