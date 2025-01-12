@@ -1,5 +1,3 @@
-import React from 'react'
-import Arrow from '../../Assets/Images/Arrow.svg'
 const Initial = () => {
   return (
     <section className='section-initial'>

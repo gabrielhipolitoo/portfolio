@@ -1,4 +1,4 @@
-import React, { FC, HtmlHTMLAttributes, ReactNode } from "react";
+import { FC, HtmlHTMLAttributes, ReactNode } from "react";
 
 interface Props extends HtmlHTMLAttributes<HTMLElement> {
   children: ReactNode;

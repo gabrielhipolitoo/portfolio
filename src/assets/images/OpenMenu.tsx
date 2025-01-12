@@ -1,4 +1,3 @@
-import React from "react";
 
 export const OpenMenu = ({ activeMenu, setActiveMenu }: any) => {
   const iconOpen = (

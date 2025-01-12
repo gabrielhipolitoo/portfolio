@@ -1,4 +1,4 @@
-import { FC, HtmlHTMLAttributes, ReactNode } from "react";
+import { FC, HtmlHTMLAttributes} from "react";
 
 interface Props extends HtmlHTMLAttributes<HTMLElement> {
   urlImage: string | undefined;

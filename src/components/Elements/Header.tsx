@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { OpenMenu } from "../../assets/images/OpenMenu";
 
 const Header = () => {

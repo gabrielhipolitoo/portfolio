@@ -1,6 +1,3 @@
-import React from "react";
-import { Icon_web } from "../../assets/images/Icon_web";
-import { IconDesign } from "../../assets/images/IconDesign";
 import Section from "../common/Section/Section";
 import { Title } from "../common/manTitle";
 const Services = () => {

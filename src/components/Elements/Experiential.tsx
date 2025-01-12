@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "../common/Section/Section";
 import { Title } from "../common/manTitle";
 import listExperiential from "../Utils/listExperiential";
@@ -15,17 +14,7 @@ const Experiential = () => {
 
       <Card.content>
         {list.map(
-          ({
-            description,
-            duration,
-            slug,
-            title,
-            type,
-            image,
-            icon,
-            link,
-            tags,
-          }) => (
+          ({ description, duration, slug, title, type, image, icon, tags }) => (
             <Card.base>
               <Card.content>
                 <Card.header>

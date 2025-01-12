@@ -1,4 +1,3 @@
-import React from "react";
 import IconFreela from "../../assets/images/IconFreela";
 
 type TlistExperiential = {
