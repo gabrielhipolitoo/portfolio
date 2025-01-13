@@ -29,7 +29,7 @@
   transition: background 150ms linear;
 
   .header-brand {
-    font-weight: 300;
+    font-weight: 400;
 
     color: #ffffff;
     font-size: functions.PxToRem(23);
@@ -176,15 +176,10 @@
       box-sizing: content-box;
       width: functions.PxToRem(450);
 
-      div {
-        background-image: url("../Images/eu.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+      img {
         border-radius: 5px;
-        width: functions.PxToRem(350);
+        width: functions.PxToRem(320);
         height: functions.PxToRem(430);
-        transition: filter, background 350ms;
 
         // &:hover {
         //   transition: filter, background 350ms;
@@ -201,13 +196,13 @@
       word-wrap: break-word;
       font-size: functions.PxToRem(27);
       color: #fff;
-      width: 60%;
+      width: functions.PxToRem(700);
       span {
         font-weight: 300;
       }
 
-      span:not(:nth-child(-n + 4)) {
-        color: #ffffff;
+      span {
+        color: #4084ea;
         margin-top: 20px;
       }
     }
@@ -224,29 +219,13 @@
 
       .my-photo {
         box-sizing: content-box;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0px;
-        overflow-y: hidden;
         min-width: 90%;
         width: 100%;
         height: 420px;
         column-gap: 20px;
         margin-top: 50px;
-
-        div:nth-child(2) {
-          border-radius: 10px;
-          width: 370px;
-          grid-column-start: 1;
-          height: 420px;
-        }
-
-        div {
-          width: 370px;
-          height: 420px;
-          background-size: 100%;
-          transition: filter, background 350ms;
-        }
+        display: flex;
+        justify-content: center;
       }
     }
   }
@@ -260,14 +239,13 @@
         line-height: 140%;
         word-wrap: break-word;
         font-size: functions.PxToRem(24);
-        color: #818185;
+        color: #dfdfdf;
         width: 90%;
         span {
           font-weight: 300;
         }
 
-        span:not(:nth-child(-n + 2)) {
-          color: #ffffff;
+        span {
           margin-top: 20px;
         }
       }
@@ -332,7 +310,8 @@
   flex-wrap: wrap;
   padding: 50px;
   border-radius: 5px;
-  margin: functions.PxToRem(100) functions.PxToRem(100) functions.PxToRem(100) auto;
+  margin: functions.PxToRem(100) functions.PxToRem(100) functions.PxToRem(100)
+    auto;
   background-color: #4084ea;
   margin: 0 auto;
   width: 90%;

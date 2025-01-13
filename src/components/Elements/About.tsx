@@ -12,7 +12,10 @@ const About = () => {
       <section className="section-about">
         <article className="about-me">
           <div className="my-photo">
-            <div></div>
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea79d8216676487.67845d03bf1a6.png"
+              alt=""
+            />
           </div>
           <p>
             Sou um desenvolvedor front-end apaixonado por tecnologia e inovação,
