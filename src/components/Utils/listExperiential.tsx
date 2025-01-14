@@ -21,8 +21,7 @@ export default function listExperiential(): TlistExperiential[] {
         "Desenvolvi um blog para uma ONG usando React, Strapi e PostgreSQL, com foco em uma plataforma simples e eficiente para gerenciar e publicar conteúdos. Utilizei React para criar uma interface dinâmica e responsiva, Strapi pela flexibilidade no gerenciamento de posts e PostgreSQL para garantir segurança e eficiência no armazenamento. O deploy foi realizado no Railway, permitindo hospedar front-end e back-end de forma rápida e escalável.",
       type: "freelancer",
       duration: "1 mês",
-      image:
-        "https://viverdefreelancer.com.br/wp-content/uploads/2024/12/ebook-img.png",
+      image: <IconFreela />,
       link: "teste.com",
       tags: ["react.js", "strapi", "railway", "postgree"],
     },

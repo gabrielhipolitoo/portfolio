@@ -87,3 +87,33 @@
     }
   }
 }
+
+#iconSocial {
+  margin-top: 5px;
+  display: flex;
+  width: functions.PxToRem(320);
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    padding: 3px;
+    border-radius: 5px;
+
+    svg {
+      margin: 0 auto;
+      fill: antiquewhite;
+      width: 20px;
+    }
+
+    &:hover {
+      background-color: #4084ea;
+    }
+  }
+
+  a:nth-child(5) {
+    padding: 5px;
+    background-color: #fff;
+    font-weight: normal;
+    color: #000;
+  }
+}
