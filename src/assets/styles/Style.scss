@@ -2,8 +2,12 @@
 @use "font";
 @use "styleCommon";
 @use "functions";
+@use "variables";
 
-//styles pages
+//colors
+$color-primary: #d9d9d9;
+$color-secondary: #9c9c9c;
+$color-dark: #181818;
 
 .portfolio {
   background-repeat: no-repeat;
@@ -29,8 +33,7 @@
   transition: background 150ms linear;
 
   .header-brand {
-    font-weight: 400;
-
+    font-weight: 300;
     color: #ffffff;
     font-size: functions.PxToRem(23);
   }
@@ -47,7 +50,7 @@
       font-size: functions.PxToRem(17);
       &:hover {
         transition: color 150ms;
-        color: #ffffffa8;
+        color: $color-secondary;
       }
     }
   }
@@ -61,9 +64,8 @@
   }
   @media (max-width: 1220px) {
     &.active-mobile {
-      background-color: #4084ea;
       ul {
-        background-color: #000;
+        background-color: $color-dark;
         border-top: 0.1px solid #d054383d;
         z-index: 10;
         position: fixed;
@@ -164,7 +166,6 @@
 
 .section-about {
   width: 100%;
-
   .about-me {
     padding: 2%;
     width: 100%;
@@ -266,9 +267,14 @@
     transition: background 150ms;
 
     &:hover {
-      background-color: #4084ea;
+      background-color: $color-primary;
       border: none;
       transition: background 150ms;
+
+      p,
+      h2 {
+        color: $color-dark;
+      }
     }
     svg {
       margin-top: functions.PxToRem(20);
@@ -297,24 +303,23 @@
   border-radius: 5px;
   margin: functions.PxToRem(100) functions.PxToRem(100) functions.PxToRem(100)
     auto;
-  background-color: #4084ea;
+  background-color: $color-primary;
   margin: 0 auto;
   width: 90%;
-  border: none;
   justify-content: space-between;
   display: flex;
   p {
     width: functions.PxToRem(724);
     text-align: center;
-    font-weight: 200;
-    color: #fff;
-    font-size: functions.PxToRem(27);
+    font-weight: 300;
+    color: $color-dark;
+    font-size: functions.PxToRem(24);
   }
 
   button {
     cursor: pointer;
     border-radius: 7px;
-    color: #fff;
+    color: $color-dark;
     font-weight: 300;
     border: none;
     background-color: transparent;
@@ -323,9 +328,11 @@
     font-size: functions.PxToRem(25);
     width: functions.PxToRem(400);
     height: functions.PxToRem(70);
+    transition: box-shadow 150ms;
 
     &:hover {
-      background-color: #fff;
+      transition: box-shadow 150ms;
+      box-shadow: -2px 3px 7px 0px #00000047;
       border: none;
       color: #000;
     }
@@ -469,13 +476,14 @@
 
       span {
         text-align: center;
-        font-weight: 200;
+        font-weight: 300;
         font-size: functions.PxToRem(18);
       }
 
       &:hover {
         transition: background 150ms;
-        background-color: #4084ea;
+        color: $color-dark;
+        background-color: $color-primary;
       }
     }
   }
@@ -484,12 +492,13 @@
 #baseTags {
   display: flex;
   gap: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 
   #tagsExperiential {
     border-radius: 5px;
     padding: 1%;
-    background-color: #4084ea;
+    color: $color-dark;
+    background-color: $color-primary;
   }
 
   @media (max-width: 680px) {
@@ -516,11 +525,15 @@
 }
 .active-scroll {
   transition: background 150ms linear;
-  background-color: #4084ea;
+  background-color: $color-primary;
 
- 
+  ul a {
+    color: $color-dark;
+  }
 
- 
+  .header-brand {
+    color: $color-dark;
+  }
 }
 
 //scrollbar
@@ -535,10 +548,10 @@
 
 /* Estilo do polegar da barra de rolagem (a própria barra) */
 ::-webkit-scrollbar-thumb {
-  background: #4084ea; /* Cor de fundo do polegar */
+  background: $color-primary; /* Cor de fundo do polegar */
 }
 
 /* Estilo do polegar da barra de rolagem quando passa o mouse por cima */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4084ea9c;
+  background: $color-secondary;
 }

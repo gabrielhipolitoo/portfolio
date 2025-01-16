@@ -4,13 +4,13 @@ import { Title } from "../common/manTitle";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Title.context>
         <Title.main text="sobre" />
         <Title.span text="mim" />
       </Title.context>
 
-      <section className="section-about">
+      <section className="section-about" id="about">
         <article className="about-me">
           <div className="my-photo">
             <img
