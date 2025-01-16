@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import About from "./components/Elements/About";
 import Budget from "./components/Elements/Budget";
 import Experiential from "./components/Elements/Experiential";
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Experiential />
       <Footer />
+      <Analytics />
     </main>
   );
 }
