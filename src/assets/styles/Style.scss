@@ -77,6 +77,11 @@ $color-dark: #181818;
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        li a {
+          font-size: larger;
+          color:$color-primary
+        }
       }
     }
 
@@ -84,11 +89,11 @@ $color-dark: #181818;
       cursor: pointer;
       width: 40px;
       display: block;
-      fill: #fff;
+      fill: $color-dark;
       transition: fill 150ms;
 
       &:hover {
-        fill: #ffffffa2;
+        fill: $color-secondary;
         transition: fill 150ms;
       }
     }
