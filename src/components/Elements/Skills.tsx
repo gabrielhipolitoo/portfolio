@@ -3,7 +3,7 @@ import { Title } from "../common/manTitle";
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
       <Title.context>
         <Title.main text="Tecnologias " />
         <Title.span text="utilizadas" />

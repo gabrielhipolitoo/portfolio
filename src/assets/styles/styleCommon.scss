@@ -94,9 +94,9 @@ $color-dark: #181818;
 }
 
 #iconSocial {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
-  width: functions.PxToRem(320);
+  width: functions.PxToRem(300);
   align-items: center;
   justify-content: space-between;
 
@@ -108,10 +108,10 @@ $color-dark: #181818;
       margin: 0 auto;
       fill: antiquewhite;
       width: 20px;
-    }
 
-    &:hover {
-      background-color: #4084ea;
+      &:hover {
+        fill: $color-secondary;
+      }
     }
   }
 

@@ -103,7 +103,7 @@ $color-dark: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: functions.PxToRem(720);
+  height: functions.PxToRem(620);
 
   > div {
     display: flex;
@@ -195,10 +195,7 @@ $color-dark: #181818;
 
       span {
         font-weight: 300;
-      }
-
-      span {
-        color: #4084ea;
+        color: $color-secondary;
         margin-top: 20px;
       }
     }
@@ -434,6 +431,7 @@ $color-dark: #181818;
     }
   }
 }
+
 .section-skills {
   margin: 0 auto;
   max-width: 98%;
@@ -491,12 +489,13 @@ $color-dark: #181818;
 
 #baseTags {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
 
   #tagsExperiential {
     border-radius: 5px;
-    padding: 1%;
+    padding: 1.2%;
     color: $color-dark;
     background-color: $color-primary;
   }

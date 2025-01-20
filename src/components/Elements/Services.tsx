@@ -2,7 +2,7 @@ import Section from "../common/Section/Section";
 import { Title } from "../common/manTitle";
 const Services = () => {
   return (
-    <Section>
+    <Section id="services">
       <Title.context>
         <Title.main text="Meus" />
         <Title.span text="serviços" />

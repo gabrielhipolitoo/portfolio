@@ -22,22 +22,19 @@ const Header = () => {
         <OpenMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
         <ul>
           <li>
-            <a href="">Inicio</a>
-          </li>
-          <li>
             <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="">Serviços</a>
+            <a href="#services">Serviços</a>
           </li>
           <li>
-            <a href="">Tecnologias</a>
+            <a href="#skills">Tecnologias</a>
           </li>
           <li>
-            <a href="">Projetos</a>
+            <a href="#experiences">Experiências</a>
           </li>
           <li>
-            <a href="">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </div>

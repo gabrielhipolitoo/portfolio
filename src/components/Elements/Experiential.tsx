@@ -6,7 +6,7 @@ import { Card } from "../common/Card";
 const Experiential = () => {
   const list = listExperiential();
   return (
-    <Section>
+    <Section id="experiences">
       <Title.context>
         <Title.main text="Minhas" />
         <Title.span text="Experiências" />
