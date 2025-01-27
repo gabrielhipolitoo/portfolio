@@ -2,6 +2,7 @@ import Section from "../common/Section/Section";
 import { Title } from "../common/manTitle";
 import listExperiential from "../Utils/listExperiential";
 import { Card } from "../common/Card";
+import CardContent from "../common/Card/CardContent";
 
 const Experiential = () => {
   const list = listExperiential();
@@ -30,8 +31,10 @@ const Experiential = () => {
                   ))}
                 </div>
               </Card.content>
-              {image && <Card.cover urlImage={image} />}
-              {icon && <Card.icon element={icon} />}
+              <CardContent>
+                {image && <Card.cover urlImage={image} />}
+              </CardContent>
+              {icon ? <Card.icon element={icon} /> : null}
             </Card.base>
           )
         )}

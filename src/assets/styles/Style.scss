@@ -80,7 +80,7 @@ $color-dark: #181818;
 
         li a {
           font-size: larger;
-          color:$color-primary
+          color: $color-primary;
         }
       }
     }
@@ -490,6 +490,13 @@ $color-dark: #181818;
       }
     }
   }
+}
+
+#capaExperiential {
+  border-radius: 5px;
+  background-color: #181818;
+  padding: 2%;
+
 }
 
 #baseTags {
