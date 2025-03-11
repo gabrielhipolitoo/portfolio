@@ -20,7 +20,7 @@ const IconsSocial: FC<Props> = ({ id = "iconSocial" }) => {
       >
         {<IconInsta />}
       </a>
-      <a target="_blank" href="">
+      <a target="_blank" href="https://www.linkedin.com/in/gabriel-hipolito/">
         {<IconLinkedin />}
       </a>
       <a target="_blank" href="https://api.whatsapp.com/send?phone=71992292368">
