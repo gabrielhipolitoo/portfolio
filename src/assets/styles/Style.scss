@@ -62,7 +62,7 @@ $color-dark: #181818;
   svg {
     display: none;
   }
-  
+
   @media (max-width: 1220px) {
     &.active-mobile {
       ul {
@@ -182,13 +182,14 @@ $color-dark: #181818;
     .my-photo {
       box-sizing: content-box;
       width: functions.PxToRem(450);
-
+      
       img {
         border-radius: 5px;
         width: functions.PxToRem(320);
         height: functions.PxToRem(430);
       }
     }
+
     p {
       letter-spacing: 1px;
       font-family: "work sans";

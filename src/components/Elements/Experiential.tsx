@@ -22,7 +22,7 @@ const Experiential = () => {
                   <Card.title text={title} />
                   <Card.text text={slug} />
                 </Card.header>
-                <Card.text text={type + duration} />
+                <Card.text text={type + " " + duration} />
                 <Card.text text={description} />
 
                 <div id="baseTags">
